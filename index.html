@@ -1,186 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sachin Kanaujiya | Solar Physics</title>
-  <meta name="description" content="Academic website and research portfolio of Sachin Kanaujiya, a solar physics researcher.">
-  <style>
-    :root {
-      --navy: #10243a;
-      --orange: #e88735;
-      --light: #f5f7fa;
-      --text: #27364a;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: var(--text);
-      background: var(--light);
-      line-height: 1.7;
-    }
-
-    header {
-      background: var(--navy);
-      color: white;
-      padding: 64px 24px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(2rem, 5vw, 3.3rem);
-    }
-
-    header p { color: #e5edf5; }
-
-    nav {
-      background: white;
-      padding: 16px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 8px #0000000d;
-    }
-
-    nav a {
-      color: var(--navy);
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 36px auto;
-      padding: 0 22px;
-    }
-
-    section {
-      background: white;
-      padding: 28px;
-      margin-bottom: 24px;
-      border-radius: 12px;
-      border: 1px solid #e6eaf0;
-    }
-
-    h2 { color: var(--navy); }
-    h2::after {
-      content: "";
-      display: block;
-      width: 48px;
-      height: 3px;
-      background: var(--orange);
-      margin-top: 8px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #fff0e2;
-      color: #874411;
-      border-radius: 20px;
-      padding: 5px 12px;
-      margin: 5px;
-      font-size: 14px;
-    }
-
-    a { color: #b65e19; }
-
-    footer {
-      text-align: center;
-      padding: 28px;
-      color: #637083;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sachin Rajkapoor Kanaujiya | Solar Physics</title>
+<meta name="description" content="Academic website of Sachin Rajkapoor Kanaujiya, solar physics researcher studying quasi-periodic pulsations and solar flares.">
+<meta name="author" content="Sachin Rajkapoor Kanaujiya">
+<meta name="theme-color" content="#10243a">
+<style>
+:root{--navy:#10243a;--navy2:#193954;--orange:#e88735;--bg:#f4f7fb;--card:#fff;--text:#243447;--muted:#617184;--line:#e0e7ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+a{color:#a94f12;text-decoration:none}a:hover{text-decoration:underline}
+header{background:radial-gradient(circle at 85% 15%,#315b76 0,transparent 35%),linear-gradient(130deg,var(--navy),#183c59);color:#fff;padding:76px 22px 64px;text-align:center}
+.hero{max-width:950px;margin:auto}header .eyebrow{color:#ffbf80;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;font-weight:700}h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.12;margin:12px 0}header p{color:#e4edf5;margin:10px auto;max-width:760px}.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:10px 17px;border-radius:8px;font-weight:700;border:1px solid #ffffff75;color:white}.btn.primary{background:var(--orange);border-color:var(--orange);color:#172a3b}.btn:hover{text-decoration:none;filter:brightness(1.05)}
+nav{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;justify-content:center;flex-wrap:wrap;padding:10px;gap:5px}nav a{color:var(--navy);font-size:.92rem;font-weight:700;padding:7px 10px;border-radius:6px}nav a:hover{background:#edf2f7;text-decoration:none}
+main{max-width:1060px;margin:32px auto;padding:0 20px}.section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,4vw,34px);margin:0 0 22px;box-shadow:0 7px 22px #17334a0a}
+h2{color:var(--navy);font-size:1.7rem;line-height:1.25;margin:0 0 18px}h2:after{content:"";display:block;width:48px;height:3px;background:var(--orange);margin-top:10px;border-radius:3px}h3{color:var(--navy);margin:20px 0 4px;font-size:1.08rem}p{margin:8px 0 12px}.muted{color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{background:#fff1e5;color:#86420e;border:1px solid #f8d9bd;padding:5px 11px;border-radius:999px;font-size:.9rem}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.metric{background:#f5f8fb;border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}.metric strong{display:block;color:var(--navy);font-size:1.5rem}.metric span{font-size:.88rem;color:var(--muted)}
+.item{padding:17px 0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0;padding-bottom:0}.item:first-child{padding-top:0}.item h3{margin:0 0 5px}.meta{font-size:.92rem;color:var(--muted)}.label{display:inline-block;font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;background:#edf3f8;color:#294a63;padding:3px 8px;border-radius:5px;margin:5px 5px 5px 0}.conference-list{padding-left:22px}.conference-list li{margin:0 0 12px}.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links a{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:9px 12px;background:#fff;font-weight:650}
+footer{text-align:center;padding:28px 18px;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){header{padding:55px 18px 48px}nav{gap:0}nav a{font-size:.83rem;padding:7px}main{padding:0 12px;margin-top:18px}.metrics{grid-template-columns:1fr}.section{padding:21px}}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Sachin Kanaujiya</h1>
-    <p>Solar Physics Researcher</p>
-    <p>PhD Research Scholar · National Institute of Technology Calicut, India</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a solar physics researcher interested in the temporal
-        behaviour of solar flares and quasi-periodic pulsations (QPPs).
-        My work combines space-based observations, signal processing,
-        and computational approaches to investigate oscillatory
-        signatures in the solar atmosphere.
-      </p>
-      <p>
-        This website presents my research interests, publications,
-        projects, and academic activities.
-      </p>
-    </section>
-
-    <section id="research">
-      <h2>Research Interests</h2>
-      <span class="tag">Solar Flares</span>
-      <span class="tag">Quasi-Periodic Pulsations</span>
-      <span class="tag">Aditya-L1 / HEL1OS</span>
-      <span class="tag">Hard X-ray Diagnostics</span>
-      <span class="tag">Multi-wavelength Astronomy</span>
-      <span class="tag">MHD Simulations</span>
-      <span class="tag">Wavelet Analysis</span>
-      <span class="tag">Empirical Mode Decomposition</span>
-    </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
-      <p>
-        My peer-reviewed publications and preprints will be listed here,
-        with full author details, journal information, and DOI links.
-      </p>
-      <p>Publication records are being updated.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Research Projects</h2>
-      <h3>Energy-dependent QPP modulation depth</h3>
-      <p>
-        Investigating the energy dependence of quasi-periodic pulsations
-        using hard X-ray solar flare observations.
-      </p>
-
-      <h3>Multi-wavelength QPP diagnostics</h3>
-      <p>
-        Studying oscillatory signatures across solar imaging and
-        spectroscopic observations.
-      </p>
-
-      <h3>Computational solar physics</h3>
-      <p>
-        Applying signal-processing methods to observational and
-        simulated solar time series.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact & Academic Links</h2>
-      <p>Email: Add your professional email address.</p>
-      <p>ORCID: Add your ORCID profile link.</p>
-      <p>GitHub: Add your GitHub profile link.</p>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 Sachin Kanaujiya · Academic Research Website
-  </footer>
+<header>
+  <div class="hero">
+    <div class="eyebrow">Solar Physics · Solar Astrophysics</div>
+    <h1>Sachin Rajkapoor Kanaujiya</h1>
+    <p><strong>Research Scholar</strong> · Department of Physics, National Institute of Technology Calicut, India</p>
+    <p>Investigating quasi-periodic pulsations in solar flares through hard X-ray, EUV, ultraviolet and complementary multi-wavelength observations, alongside signal analysis and numerical modelling.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#publications">Explore publications</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=YL85rDIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+      <a class="btn" href="https://orcid.org/0009-0009-3048-0109" target="_blank" rel="noopener">ORCID ↗</a>
+    </div>
+  </div>
+</header>
+<nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#conferences">Conferences</a><a href="#profiles">Profiles</a><a href="#contact">Contact</a>
+</nav>
+<main>
+<section class="section" id="about">
+<h2>About</h2>
+<p>I am a research scholar in solar physics at the National Institute of Technology Calicut, India. My research focuses on quasi-periodic pulsations (QPPs) associated with solar flares and eruptions, including their temporal behaviour and signatures across different wavelength ranges.</p>
+<p>My work brings together observations from Aditya-L1/HEL1OS and other solar observatories with time-series analysis methods to study oscillatory signals in the solar atmosphere.</p>
+<div class="metrics">
+<div class="metric"><strong>2</strong><span>Google Scholar citations*</span></div>
+<div class="metric"><strong>1</strong><span>h-index*</span></div>
+<div class="metric"><strong>15</strong><span>Listed conference/workshop activities</span></div>
+</div>
+<p class="muted"><small>*Citation metrics copied from the profile information supplied for this website; they may change over time. Conference/workshop count reflects the 15 distinct activities listed below, including presentations and workshop attendance.</small></p>
+</section>
+<section class="section" id="research">
+<h2>Research interests</h2>
+<div class="tags">
+<span class="tag">Quasi-periodic pulsations</span><span class="tag">Solar flares and eruptions</span><span class="tag">Aditya-L1 / HEL1OS</span><span class="tag">Hard X-ray diagnostics</span><span class="tag">SDO/AIA</span><span class="tag">Multi-wavelength observations</span><span class="tag">Coronal mass ejections</span><span class="tag">Empirical mode decomposition</span><span class="tag">Wavelet analysis</span><span class="tag">MHD simulations</span>
+</div>
+</section>
+<section class="section" id="publications">
+<h2>Publications</h2>
+<p class="muted">Publication status is shown as provided in the supplied CV/profile material. Preprint records for the same HEL1OS paper are consolidated to avoid listing the same work twice.</p>
+<div class="item">
+<span class="label">Published · Journal article · 2026</span>
+<h3>Multimode Quasiperiodic Pulsations in Extreme-ultraviolet Emissions Associated with an X-Class Solar Flare</h3>
+<p><strong>S. R. Kanaujiya</strong>, R. A. Maurya, V. M. Nakariakov.</p>
+<p class="meta"><em>The Astrophysical Journal</em>, 1003(1), 78 (2026).</p>
+<p><a href="https://scholar.google.com/citations?user=YL85rDIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar record ↗</a></p>
+</div>
+<div class="item">
+<span class="label">Accepted for publication · Journal article · 2026</span>
+<h3>Hard X-Ray Quasi-Periodic Pulsations in X-Class Solar Flares Observed by Aditya-L1/HEL1OS</h3>
+<p><strong>S. R. Kanaujiya</strong>, R. A. Maurya, S. Gopinathan, V. M. Nakariakov.</p>
+<p class="meta"><em>The Astrophysical Journal</em> (2026). A related arXiv preprint is listed on Google Scholar.</p>
+<p><a href="https://arxiv.org/abs/2609.22787" target="_blank" rel="noopener">arXiv:2609.22787 ↗</a> · <a href="https://scholar.google.com/citations?user=YL85rDIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a></p>
+</div>
+<div class="item">
+<span class="label">Accepted · Journal article · 2026</span>
+<h3>Investigation of an X-class Flare and Quasi-Periodic Pulsations in NOAA AR 13842 using SDO, Aditya-L1 and Solar Orbiter</h3>
+<p>P. Kumar, S. Kumar, S. S. Nayak, <strong>S. R. Kanaujiya</strong>, R. Chandra.</p>
+<p class="meta"><em>Advances in Space Research</em> (2026), as listed in the supplied CV.</p>
+<p><a href="https://arxiv.org/abs/2610.22165" target="_blank" rel="noopener">arXiv:2610.22165 ↗</a></p>
+</div>
+<div class="item">
+<span class="label">Accepted · Journal article · 2026</span>
+<h3>Exploring an X1.8 Flare and Associated Quasi-Periodic Pulsations Using SDO and Aditya-L1 Observations, Alongside NFFF Extrapolation</h3>
+<p>P. Kumar, S. Kumar, <strong>S. R. Kanaujiya</strong>, Y. K. Maurya.</p>
+<p class="meta"><em>Solar Physics</em> (2026), as listed in the supplied CV.</p>
+<p><a href="https://arxiv.org/abs/2610.08124" target="_blank" rel="noopener">arXiv:2610.08124 ↗</a></p>
+</div>
+<div class="item">
+<span class="label">Published · Proceedings paper · 2025</span>
+<h3>Quasi Periodic Oscillation in a Coronal Mass Ejection Due to Shock Wave</h3>
+<p><strong>S. R. Kanaujiya</strong>, R. A. Maurya, J. Jacob P. T.</p>
+<p class="meta">Proceedings of the Lecture Note in Electrical Engineering, Springer Nature (2025), as listed in the supplied CV.</p>
+<p><a href="https://scholar.google.com/citations?user=YL85rDIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile ↗</a></p>
+</div>
+</section>
+<section class="section" id="projects">
+<h2>Research themes and projects</h2>
+<div class="item"><h3>Hard X-ray QPPs with Aditya-L1/HEL1OS</h3><p>Statistical investigation of quasi-periodic pulsations in X-class solar flares, including energy-dependent temporal and modulation properties.</p></div>
+<div class="item"><h3>Multi-wavelength QPP diagnostics</h3><p>Comparing oscillatory signatures in hard X-rays, EUV imaging, and ultraviolet observations to investigate flare-associated dynamics across atmospheric diagnostics.</p></div>
+<div class="item"><h3>QPPs in CMEs and eruptive solar events</h3><p>Studying oscillations associated with coronal mass ejections, shock waves, and prominence eruptions using solar observations.</p></div>
+<div class="item"><h3>Signal processing and computational analysis</h3><p>Applying empirical mode decomposition, wavelet methods, Fourier analysis, and related time-series techniques to solar observations and simulated light curves.</p></div>
+</section>
+<section class="section" id="conferences">
+<h2>Conferences, presentations and workshops</h2>
+<p><strong>15 activities listed</strong> from the CV images supplied: 9 presentations and 6 workshop attendances, based on the descriptions provided. Some events may be classified differently by their organisers; the list below preserves the supplied wording.</p>
+<ol class="conference-list">
+<li><strong>Poster presentation</strong> — “Use of Image Processing in Solar Astrophysics,” <em>Confluentia 2023</em>, NIT Calicut, 25 March 2023.</li>
+<li><strong>Poster presentation</strong> — “Quasi Periodic Pulsation in Coronal Mass Ejection,” 9th Regional Astronomy Meeting (RAM) 2024, organised by IUCAA Pune and Manipal University, 10–12 January 2024.</li>
+<li><strong>Poster presentation</strong> — “Quasi Periodic Pulsation Due to Shock Wave in CME,” <em>Confluentia 2024</em>, NIT Calicut, 23 March 2024.</li>
+<li><strong>Paper presentation</strong> — “Observation of Quasi Periodic Pulsations in the Solar Corona Associated with a Coronal Mass Ejection,” Research Conclave on Global Transformation 2024 (ReCon-GT24), NIT Calicut, 19–20 April 2024.</li>
+<li><strong>Workshop attendance</strong> — “Probing Stars and Galaxies Using Innovative Data Science Tools,” Department of Applied Sciences, Gauhati University, 4–6 September 2024; organised with IUCAA Pune, NIF Gandhinagar, University of Delhi and Gauhati University.</li>
+<li><strong>Oral presentation</strong> — “The Role of Magnetic Reconnection in Quasi-Periodic Pulsations of a Solar Eruption,” <em>Confluentia 2025</em>, NIT Calicut, 1 March 2025.</li>
+<li><strong>Workshop attendance</strong> — “Aditya-L1 10th Support Cell Workshop,” Aryabhatta Research Institute of Observational Sciences, Nainital, 26 May–4 June 2025; organised by the Indian Space Research Organisation.</li>
+<li><strong>Workshop attendance</strong> — “Statistical Techniques in Astronomical Research,” Vainu Bappu Observatory, Kavalur, 30 June–5 July 2025; organised by the Indian Institute of Astrophysics, Bengaluru.</li>
+<li><strong>Paper presentation</strong> — “Multi-Mode Quasi-periodic Pulsations Associated with CME-Prominence Eruptions Observed by MLSO/K-Cor,” National Conference on Innovation, Inclusion, and Inspiration for a Sustainable Future 2025 (ReConIII), NIT Calicut, 25–27 September 2025.</li>
+<li><strong>Paper presentation</strong> — “Flare-Triggered Transverse Oscillations in Coronal Loops Observed by SDO/AIA During an X7.1-Class Flare,” ReConIII, NIT Calicut, 25–27 September 2025.</li>
+<li><strong>Poster presentation</strong> — “Detection of Multi-Mode Intensity Oscillation in Coronal Mass Ejection Associated with Prominence Eruption by Using Empirical Mode Decomposition,” International Workshop on The Variable Sun: Past, Present, and Future Perspectives, Indian Institute of Space Science and Technology (IIST), Thiruvananthapuram, 13–17 October 2025.</li>
+<li><strong>Poster presentation</strong> — “Use of Empirical Mode Decomposition in the Solar Atmosphere,” Young Astronomers’ Meet-II 2025, Indian Institute of Technology (BHU), Varanasi, 5–7 December 2025.</li>
+<li><strong>Poster presentation</strong> — “Multimode Quasi-Periodic Pulsations Associated with CME-Prominence Eruptions Observed by MLSO/K-Cor,” ISRO–ESA Heliophysics Workshop on Aditya-L1, Solar Orbiter and Proba-3, Vikram Sarabhai Space Centre, Thiruvananthapuram, 19–23 January 2026.</li>
+<li><strong>Poster presentation</strong> — “Multimode Quasi-Periodic Pulsations in Extreme-Ultraviolet Emissions Associated with an X-Class Solar Flare,” International Conference on Exploring the Sun at High-Resolution: Present Perspectives and Future Horizons, Udaipur Solar Observatory, 10–13 February 2026.</li>
+<li><strong>Oral presentation</strong> — “First Statistical Study of Hard X-ray QPPs in X-Class Solar Flares Using Aditya-L1 HEL1OS Data,” Fourth In-House Symposium, <em>Confluentia 2026</em>, Department of Physics, NIT Calicut, 27 February 2026.</li>
+</ol>
+</section>
+<section class="section" id="profiles">
+<h2>Academic profiles</h2>
+<div class="contact-links">
+<a href="https://scholar.google.com/citations?user=YL85rDIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+<a href="https://orcid.org/0009-0009-3048-0109" target="_blank" rel="noopener">ORCID ↗</a>
+<a href="https://github.com/ksachin1596-ops" target="_blank" rel="noopener">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/sachin-rajkapoor-kanaujiya-ba28621a7/" target="_blank" rel="noopener">LinkedIn ↗</a>
+</div>
+</section>
+<section class="section" id="contact">
+<h2>Contact</h2>
+<p>Department of Physics, National Institute of Technology Calicut, Kerala, India.</p>
+<p>For professional contact, please use the email listed on my institutional profile.</p>
+<p class="muted"><small>To keep this page accurate, update publication statuses, DOI links, contact details, and citation metrics as they change. This page uses information supplied by the researcher and is not an independently verified CV.</small></p>
+</section>
+</main>
+<footer>© 2026 Sachin Rajkapoor Kanaujiya · Academic website hosted with GitHub Pages</footer>
 </body>
 </html>
